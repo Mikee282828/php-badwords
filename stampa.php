@@ -1,5 +1,6 @@
 <?php 
 $nome = $_GET["nome"];
+$stringLen = strlen($nome);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +13,11 @@ $nome = $_GET["nome"];
     <h1>
         <?php
         echo $nome;
-        ?>
+        ?><br>
+        La stringa è lunga: 
+        <?php
+        echo $stringLen;
+        ?> caratteri;
     </h1>
 </body>
 </html>
