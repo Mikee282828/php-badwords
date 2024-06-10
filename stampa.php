@@ -1,3 +1,6 @@
+<?php 
+$nome = $_GET["nome"];
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +9,10 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="stampa.php">
-        <input type="text" name="nome">
-        <input type="submit">
-    </form>
+    <h1>
+        <?php
+        echo $nome;
+        ?>
+    </h1>
 </body>
 </html>
