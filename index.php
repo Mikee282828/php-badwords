@@ -8,6 +8,7 @@
 <body>
     <form action="stampa.php">
         <input type="text" name="stringa">
+        <input type="text" name="censura">
         <input type="submit">
     </form>
 </body>

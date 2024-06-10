@@ -1,6 +1,8 @@
 <?php 
 $stringa = $_GET["stringa"];
-$stringLen = strlen($stringa);
+$messaggio = "Il paragrafo inviato è lungo  " . strlen($stringa) . " caratteri";
+$censura = $_GET["censura"];
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,11 +14,16 @@ $stringLen = strlen($stringa);
 <body>
     <h1>
 
-        Il paragrafo inviato è lungo
+        
+
         <?php
-        echo $stringLen;
-        ?> 
-        caratteri;
+            echo $messaggio;
+        ?>
+        <br>
+        
+        <?php
+            echo str_replace($censura,"***",$messaggio);
+        ?>
     </h1>
 </body>
 </html>
