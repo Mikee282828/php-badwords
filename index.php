@@ -7,7 +7,7 @@
 </head>
 <body>
     <form action="stampa.php">
-        <input type="text" name="nome">
+        <input type="text" name="stringa">
         <input type="submit">
     </form>
 </body>

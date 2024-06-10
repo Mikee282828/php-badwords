@@ -1,6 +1,6 @@
 <?php 
-$nome = $_GET["nome"];
-$stringLen = strlen($nome);
+$stringa = $_GET["stringa"];
+$stringLen = strlen($stringa);
 ?>
 <!DOCTYPE html>
 <html lang="en">
