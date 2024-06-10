@@ -11,13 +11,12 @@ $stringLen = strlen($nome);
 </head>
 <body>
     <h1>
-        <?php
-        echo $nome;
-        ?><br>
-        La stringa è lunga: 
+
+        Il paragrafo inviato è lungo
         <?php
         echo $stringLen;
-        ?> caratteri;
+        ?> 
+        caratteri;
     </h1>
 </body>
 </html>
