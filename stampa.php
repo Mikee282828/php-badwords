@@ -2,6 +2,7 @@
 $stringa = $_GET["stringa"];
 $messaggio = "Il paragrafo inviato è lungo  " . strlen($stringa) . " caratteri";
 $censura = $_GET["censura"];
+$msgCensurato = str_replace("inviato","censurato",$messaggio);
 
 ?>
 <!DOCTYPE html>
@@ -22,7 +23,7 @@ $censura = $_GET["censura"];
         <br>
         
         <?php
-            echo str_replace($censura,"***",$messaggio);
+            echo str_replace($censura,"***",$msgCensurato);
         ?>
     </h1>
 </body>
